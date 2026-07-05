@@ -414,48 +414,12 @@ summary:focus-visible {
   margin-top: 32px;
 }
 
-.proof-section {
-  display: grid;
-  gap: 28px;
-}
-
-.proof-grid {
-  display: grid;
-  gap: 14px;
-}
-
-.proof-grid article {
-  display: grid;
-  gap: 6px;
-  padding: clamp(20px, 5vw, 26px);
-  background: var(--card);
-  border: 1px solid rgba(201, 183, 139, 0.28);
-  border-radius: var(--radius);
-  box-shadow: 0 16px 44px rgba(22, 32, 45, 0.06);
-}
-
-.proof-grid strong {
-  color: var(--primary);
-  font-size: clamp(1.35rem, 5vw, 2rem);
-  line-height: 1.05;
-}
-
-.proof-grid span {
-  color: var(--text-muted);
-  font-weight: 700;
-}
-
-.benefit-row article,
-.testimonial-grid figure {
+.benefit-row article {
   padding: clamp(20px, 5vw, 24px);
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-}
-
-.testimonial-grid figure {
-  border-color: rgba(201, 183, 139, 0.2);
 }
 
 .benefits-now .benefit-row article {
@@ -464,8 +428,6 @@ summary:focus-visible {
 }
 
 .benefit-row article,
-.testimonial-grid figure,
-.testimonial-grid article,
 .logo-slot,
 .form-card,
 .steps article,
@@ -479,8 +441,7 @@ details {
   font-size: 1.05rem;
 }
 
-.benefit-row p,
-.testimonial-grid p {
+.benefit-row p {
   margin: 0;
   color: var(--gray-600);
 }
@@ -842,44 +803,6 @@ select:focus {
   font-weight: 800;
 }
 
-.testimonial-grid {
-  display: grid;
-  gap: 16px;
-}
-
-.testimonial-grid figure,
-.testimonial-grid article {
-  margin: 0;
-}
-
-.testimonial-grid blockquote,
-.testimonial-grid h3 {
-  margin: 0 0 18px;
-  color: var(--navy);
-  font-size: 1.05rem;
-  font-weight: 700;
-  line-height: 1.45;
-}
-
-.testimonial-grid figcaption {
-  color: var(--gray-600);
-  font-size: 0.92rem;
-  font-weight: 600;
-}
-
-.question-grid article {
-  padding: clamp(20px, 5vw, 24px);
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.question-grid p {
-  margin: 0;
-  color: var(--text-muted);
-}
-
 .faq-list {
   display: grid;
   gap: 12px;
@@ -1013,9 +936,7 @@ details p {
     flex-direction: row;
   }
 
-  .benefit-row,
-  .testimonial-grid,
-  .proof-grid {
+  .benefit-row {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -1108,8 +1029,6 @@ details p {
   }
 
   .benefit-row article:hover,
-  .testimonial-grid figure:hover,
-  .testimonial-grid article:hover,
   .logo-slot:hover,
   .form-card:hover,
   .steps article:hover,
