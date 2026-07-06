@@ -1,7 +1,6 @@
 const leadForm = document.querySelector("#leadForm");
 const whatsappInput = document.querySelector("#whatsapp");
 const rendaInput = document.querySelector("#renda");
-const copyButton = document.querySelector("#copyButton");
 const formStatus = document.querySelector("#formStatus");
 const currentYear = document.querySelector("#currentYear");
 
@@ -52,7 +51,7 @@ function getFieldValue(formData, fieldName) {
   return formData.get(fieldName) || "Não informado";
 }
 
-// Centraliza a mensagem para que envio e cópia usem exatamente o mesmo conteúdo.
+// Centraliza a mensagem enviada pelo WhatsApp.
 function buildLeadMessage() {
   const formData = new FormData(leadForm);
   const cidade = getFieldValue(formData, "cidade");
@@ -116,23 +115,6 @@ leadForm.addEventListener("submit", (event) => {
 
   formStatus.textContent = "Mensagem pronta. Abrindo o WhatsApp...";
   window.open(whatsappUrl, "_blank");
-});
-
-// Alternativa para quando o visitante preferir encaminhar os dados manualmente.
-copyButton.addEventListener("click", async () => {
-  if (!validateBeforeAction()) {
-    return;
-  }
-
-  const message = buildLeadMessage();
-
-  try {
-    await navigator.clipboard.writeText(message);
-    formStatus.textContent = "Dados copiados para a área de transferência.";
-  } catch (error) {
-    formStatus.textContent =
-      "Não foi possível copiar automaticamente. Selecione os dados gerados e copie manualmente.";
-  }
 });
 
 window.leadPage = {
