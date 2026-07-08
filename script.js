@@ -67,7 +67,7 @@ function buildLeadMessage() {
   return [
     "Olá, Bruno!",
     "",
-    "Preenchi a pré-análise de crédito no site O Bruno dos Imóveis.",
+    "Preenchi a pré-análise de crédito pelo site.",
     "",
     "Segue meu perfil:",
     "",
