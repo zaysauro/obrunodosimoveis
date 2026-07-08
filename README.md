@@ -1,7 +1,12 @@
-# Landing page Minha Casa Minha Vida
+# O Bruno dos Imóveis
 
-Site estático para captação de leads interessados em financiar imóvel pelo
-Minha Casa Minha Vida em Curitiba e região metropolitana.
+Site estático para captação de leads interessados em orientação de crédito
+imobiliário, pré-análise de financiamento e Minha Casa Minha Vida em Curitiba
+e região metropolitana.
+
+Posicionamento: consultor imobiliário especializado em crédito imobiliário,
+com foco em crédito habitacional, Minha Casa Minha Vida e pré-análise de
+financiamento.
 
 ## Arquivos
 
